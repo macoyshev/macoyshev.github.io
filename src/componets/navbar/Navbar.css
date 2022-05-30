@@ -1,0 +1,28 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    gap: 7em;
+    padding: 1em;
+}
+
+
+.menu__link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+
+    transition: all 0.2s linear 0s;
+}
+
+.menu__link:hover {
+    color: #8167A9;
+    transition: all 0.2s linear 0s;
+}
+
+
+.menu__link_active {
+    color: #777
+}
