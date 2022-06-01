@@ -9,3 +9,16 @@
     width: 40px;
     height: 40px;
 }
+
+.social-network a {
+    text-decoration: None;
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s linear 0s;
+}
+
+.social-network a:hover {
+    font-weight: bold;
+    color: #8167A9;
+    transition: all 0.2s linear 0s;
+}
