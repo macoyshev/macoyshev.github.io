@@ -27,28 +27,3 @@
 .menu__link_active {
     color: #777
 }
-
-
-.contacts {
-    position: absolute;
-    padding-left: 2em;
-    left: 57%;
-    top: 8%;
-    
-    opacity: 0;
-
-    width: 200px;
-    height: 200px;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-
-    background-color: white;
-    border-radius: 12%;
-    box-shadow:  0px 0px 4px 0px #8167A9;
-
-    transition: all 0.3s linear 0s;
-}
