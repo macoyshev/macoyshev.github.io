@@ -29,9 +29,9 @@ const Navbar = () => {
 
     return (
         <nav className='menu'>
-            <a href="/#" className="menu__link">Home</a>
-            <a href="/#" className="menu__link">Portfolio</a>
-            <a href="/#" className="menu__link" onClick={handleClick}>Contacts</a>
+            <a href="#" className="menu__link">Home</a>
+            <a href="#" className="menu__link">Portfolio</a>
+            <a href="#" className="menu__link" onClick={handleClick}>Contacts</a>
             <div className="contacts" id="contacts">
                 <Github />
                 <Gmail />
