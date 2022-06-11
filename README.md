@@ -3,4 +3,4 @@
     npm start  
 
 ### Github pages
-    https://github.com/macoyshev/personal_website
+    https://macoyshev.github.io/personal_website/
