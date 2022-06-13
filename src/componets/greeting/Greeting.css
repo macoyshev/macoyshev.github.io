@@ -1,7 +1,12 @@
 .greeting{
     margin: auto;
-    margin-top: 23%;
-    width: 30%;
+    height: 40em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .greeting__text {
@@ -18,17 +23,9 @@
     color: #8167A9;
 }
 
-.greeting__image{
-    top:10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(180deg);
-    transition: all 0.2s;
-}
+.greeting__image img {
+    width: 200px;
+    height: 200px;
 
-
-.greeting__image:hover {
-    transform: rotate(0);
-    transition: all 0.2s;
+    border-radius: 50%;
 }

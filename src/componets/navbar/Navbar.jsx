@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
 import './Navbar.css'
 import Github from '../social_networks/github/Github.jsx'
 import Gmail from '../social_networks/gmail/Gmail.jsx'
@@ -11,35 +11,17 @@ const handleClick = ()=> {
     else contacst.style.opacity = 1
 }
 
-const getDogImage = async () => {
-    let res = await fetch('https://random.dog/woof.json')
-    let data = await res.json()
-
-    return data.url
-}
-
-
 const Navbar = () => {
-    const [dogImgUrl, setDogImgUrl] = useState('')
-    
-    useEffect(() => {
-        getDogImage()
-            .then(url => setDogImgUrl(url))
-    }, [])
-
     return (
         <nav className='menu'>
-            <a href="#" className="menu__link">Home</a>
-            <a href="#" className="menu__link">Portfolio</a>
-            <a href="#" className="menu__link" onClick={handleClick}>Contacts</a>
+            <button className="menu__link">Home</button>
+            <button className="menu__link">Portfolio</button>
+            <button className="menu__link" onClick={handleClick}>Contacts</button>
             <div className="contacts" id="contacts">
                 <Github />
                 <Gmail />
                 <Telegram />
             </div>  
-            <div id="dog-image">
-                <img src={dogImgUrl} alt=""/>
-            </div>
         </nav>
     )
 }
