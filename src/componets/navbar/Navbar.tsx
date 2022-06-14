@@ -1,14 +1,17 @@
 import React from "react"
+
 import './Navbar.css'
-import Github from '../social_networks/github/Github.jsx'
-import Gmail from '../social_networks/gmail/Gmail.jsx'
-import Telegram from '../social_networks/telegram/Telegram.jsx'
+import Github from '../social_networks/github/Github'
+import Gmail from '../social_networks/gmail/Gmail'
+import Telegram from '../social_networks/telegram/Telegram'
 
 
-const handleClick = ()=> {
-    let contacst = document.getElementById('contacts')
-    if (contacst.style.opacity === '1')contacst.style.opacity = 0
-    else contacst.style.opacity = 1
+const handleClick = () => {
+    let contacts = document.getElementById('contacts')!
+
+    if (contacts.style.opacity === '1') contacts.style.opacity = '0'
+
+    else contacts.style.opacity = '1'
 }
 
 const Navbar = () => {

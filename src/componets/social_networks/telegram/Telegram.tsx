@@ -1,7 +1,10 @@
+import React from "react";
+import { ReactElement } from 'react'
+
 import '../SocialNetworks.css'
 
 
-const Telegram = ()=> {
+const Telegram: React.FC = (): ReactElement => {
     return (
         <div className='social-network'>
             <img src={require('./telegram.png')} alt="telegram-logo"/>
