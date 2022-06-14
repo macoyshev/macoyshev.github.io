@@ -1,16 +1,18 @@
-import { useState, useEffect} from 'react'
+import React from "react";
+import { useState, useEffect, ReactElement} from 'react'
+
 import './Greeting.css'
 
 
-const parseMediaType = (sourcePath) => {
-    let srcPathDetails = sourcePath.split('.')
+const parseMediaType = (sourcePath: string): string => {
+    let srcPathDetails: Array<string> = sourcePath.split('.')
     
     return srcPathDetails[srcPathDetails.length - 1]
 }
 
-const getDogImage = async () => {
-    let res = await fetch('https://random.dog/woof.json')
-    let data = await res.json()
+const getDogImage = async (): Promise<string> => {
+    let res: Response = await fetch('https://random.dog/woof.json')
+    let data: any = await res.json()
     
     let type = parseMediaType(data.url)
 
@@ -20,10 +22,10 @@ const getDogImage = async () => {
         type = parseMediaType(data.url)
     }
 
-    return data.url
+    return data.url 
 }
 
-const Greeting = () => {
+const Greeting: React.FC = (): ReactElement => {
     const [dogImgUrl, setDogImgUrl] = useState('/public/logo.png')
     useEffect(() => {
         getDogImage()
@@ -32,7 +34,7 @@ const Greeting = () => {
 
     return (
         <div className='greeting'>
-            <div class="greeting__image">
+            <div className="greeting__image">
                 <img src={dogImgUrl} alt=""/>
             </div>
 
