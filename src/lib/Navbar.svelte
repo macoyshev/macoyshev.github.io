@@ -1,11 +1,12 @@
 <script lang="ts">
-    import SocialNetworks, {changeOpacity} from "./SocialNetworks.svelte";
+    import SocialNetworks, {changeOpacity} from "$lib/SocialNetworks.svelte";
 </script>
 
 <nav class="menu">
-    <button class="menu__link">Home</button>
-    <button class="menu__link">Portfolio</button>
-    <button class="menu__link" on:click="{changeOpacity}">Contacts</button>
+    <a class="menu__link" href="/">Home</a>
+    <a class="menu__link" href='/portfolio'>Portfolio</a>
+    <button class="menu__link" on:click={changeOpacity}>Contacts</button>
+    
     <SocialNetworks/>
 </nav>
 
