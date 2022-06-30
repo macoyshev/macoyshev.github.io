@@ -19,7 +19,7 @@
         
         imageSrc = data.url
     }
-    let imageSrc = '/static/images/loading.gif'
+    let imageSrc = 'loading.gif'
 
     setDogImage()
 </script>

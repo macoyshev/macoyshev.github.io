@@ -8,15 +8,15 @@
 
 <div class="contacts" id="contacts">
     <div class="social-network">
-        <img src='/static/images/github.png' alt='github-logo'/>
+        <img src='github.png' alt='github-logo'/>
         <a href='https://github.com/macoyshev'>Github</a>
     </div>
     <div class='social-network'>
-        <img src='/static/images/google.png' alt="gmail-logo" class='social-network__logo'/>
+        <img src='google.png' alt="gmail-logo" class='social-network__logo'/>
         <a href='mailto:make.oynoshev@gmail.com'>Gmail</a>
     </div>
     <div class='social-network'>
-        <img src='/static/images/telegram.png' alt="telegram-logo" class='social-network__logo'/>
+        <img src='telegram.png' alt="telegram-logo" class='social-network__logo'/>
         <a href='https://t.me/Macoyshev'>Telegram</a>
     </div>
 </div> 
