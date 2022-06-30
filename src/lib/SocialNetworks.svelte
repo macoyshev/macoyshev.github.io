@@ -1,12 +1,13 @@
 <script lang="ts" context="module">  
+    let contacts: HTMLDivElement
+
     export const changeOpacity = () => {
-        const contacts = document.getElementById("contacts") as HTMLDivElement 
         contacts.style.opacity = contacts.style.opacity === '1'? '0': '1'
     }
 
 </script>
 
-<div class="contacts" id="contacts">
+<div class="contacts" bind:this={contacts}>
     <div class="social-network">
         <img src='github.png' alt='github-logo'/>
         <a href='https://github.com/macoyshev'>Github</a>
